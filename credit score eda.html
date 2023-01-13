@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Portfolio Details</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+    <header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							
+							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+							
+							<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/sarnav-chauhan/"><i class="fa fa-linkedin"></i></a></li>
+							<li class="nav-item"><a class="nav-link" href="https://github.com/sarnav18"><i class="fa fa-github"></i></a></li>
+
+
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+
+
+	<!--================Start Portfolio Details Area =================-->
+	<section class="portfolio_details_area section_gap">
+        <div class="container">
+            <div class="portfolio_details_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left_img"></br></br>
+                            <img class="img-fluid" src="img/credit - 2.jpg" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="portfolio_right_text mt-30">
+                            <h4 class="text-uppercase">Analysis on credit score</h4><a href="https://github.com/sarnav18/CreditScoreClassificationEDA">GitHub Link</a>
+                            <p>
+                                We are on the fast track to a cashless society in the world today. In a cashless era, credit cards are a great payment method. Banks do not, however, accept every credit card application. When choosing whether to approve a card application, they take into account a variety of factors, including the applicant's age, credit history, income, and ownership of the property. </br>We can comprehend how each of these characteristics affects one in being authorised for getting a credit card using this dataset.
+                                <!--  -->
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <p> We are given with the credit score and their characteristics for 12.5k customers over 8 months, giving around 100k rows.Our dataset has many null values and outliers, and we must reformat certain categorical attributes for analysis. In this project we explore how can one maintain a good credit score, and what mistakes impact a credit score.</p>
+                <!-- <p>Data management allows organizations to effectively scale data and usage occasions with repeatable processes to keep data and metadata up to date. When processes are easy to repeat, your organization can avoid the unnecessary costs of duplication, such as employees conducting the same research repeatedly or re-running costly queries unnecessarily.</p> -->
+                <!-- <h2>Methodology</h2> -->
+                <h3>Understanding the data</h3>
+                <p>Majority of Credit Scores are in the standard segment whereas there are less than 20% customers having a good credit score. The next step was to clean data - check for unexpected values in the column. For example credit history age which had time-periods mentioned as ‘5 year and 6 months’ that needed to be changed to numeric columns as 5.5.</p>
+                <p>Handled null values, removed outliers and observed the following trends: </p>
+                <h3>Trends in Data</h3>
+               <p>• Credit scores are almost equally distributed among all. So, it indicates that your credit score doesn’t depend significantly on your profession <img src="img/credit score/1.png" alt="" width="900">
+            </br></br>
+
+• Number of customers with good credit score tend to increase slightly month over month <img src="img/credit score/2.png" alt="" width="900"><img src="img/credit score/3.png" alt="" width="900">
+</br></br>
+
+<h3>Factors affecting credit score </h3><img src="img/credit score/4.png" alt="" width="900">
+<h3>Effect of in-hand monthly salary </h3><img src="img/credit score/5.png" alt="" width="900">
+<h3>Effect of delaying payment from due date </h3><p>• As the payment is delayed from the due date, outstanding debt increases. </br>
+    • People with good credit score and high outstanding debt clear the dues early.
+    </p><img src="img/credit score/6.png" alt="" width="700"><p>• Credit History Age decreases with increase in payment delay
+    </p><img src="img/credit score/7.png" alt="" width="700">
+    <h3>Effect of Outstanding Debt</h3>
+    <p>• Customers in good credit score bucket, usually end up having lower outstanding debts and their monthly account balance is decently split between 0 to 1500 dollars</br>
+        • Customers in the poor credit score bucket has high outstanding debts and have low monthly income</br>
+        • Customers who have a longer credit history end up being good customers and they usually have less outstanding debts
+        </p><img src="img/credit score/8.png" alt="" width="900">
+                <h2>Recommendations</h2>
+                <p>• Maintain a high account balance and avoid delayed payments</p><img src="img/credit score/9.png" alt="" width="700">
+                <p>• Maintain less than $ 1,500 outstanding debts to secure a good spot in good and standard credit score bucket</p><img src="img/credit score/10.png" alt="" width="900">
+                <p>• Avoid having multiple bank accounts. </p><img src="img/credit score/11.png" alt="" width="800">
+                <p>• Prioritize increasing the number of spends with large or medium dollar values and avoid payments with low small dollar values
+                </p><img src="img/credit score/12.png" alt="" width="900">
+                <!-- <p>Built on the foundation of healthcare and senior living, the organization has a staple product line across the United States and beyond. The is an organization on the rise and since they’ve scaled their operations up in the recent past, the number of entities and the complexity of their relationships have increased. Whenever an organization decides to scale up, they should be more observant in the way they manage their databases. Data management helps minimize potential errors by establishing processes and policies for usage and building trust in the data being used to make decisions across your organization. With reliable, up-to-date data, companies can respond more efficiently to market changes and customer needs. Currently the organization manages data using excel sheets, but wants to migrate to databases as they have the advantage to handle large volumes of data. Data management allows organizations to effectively scale data and usage occasions with repeatable processes to keep data and metadata up to date. When processes are easy to repeat, your organization can avoid the unnecessary costs of duplication, such as employees conducting the same research repeatedly or re-running costly queries unnecessarily.</p> -->
+            
+            </div>
+        </div>
+    </section>
+    <!--================End Portfolio Details Area =================-->
+    
+  
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>

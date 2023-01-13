@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Portfolio Details</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+    <header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							
+							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+							
+							<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/sarnav-chauhan/"><i class="fa fa-linkedin"></i></a></li>
+							<li class="nav-item"><a class="nav-link" href="https://github.com/sarnav18"><i class="fa fa-github"></i></a></li>
+
+
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+
+
+	<!--================Start Portfolio Details Area =================-->
+	<section class="portfolio_details_area section_gap">
+        <div class="container">
+            <div class="portfolio_details_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left_img">
+                            <img class="img-fluid" src="img/bankruptcy 1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="portfolio_right_text mt-30">
+                            <h4 class="text-uppercase">Forecasting if the firm will collapse</h4>
+                            <a href="https://github.com/sarnav18/BankruptcyClassification">GitHub Link</a>
+                            <p>
+                                As one of the most popular issues in economics, bankruptcy prediction has drawn a lot of attention . The goal of financial crisis prediction is to create a predictive model that integrates numerous statistical measures and enables one to forecast a firm's financial situation. The goal of bankruptcy prediction is to evaluate a company's financial situation and its prospects for the future in the context of its long-term operation on the market.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <h2>Final Model</h2>
+                <p>Two HP neural networks nodes and two gradient boosting nodes were run, and then the average of them was used for the final predictions. The “HP neural networks” and the “Gradient Boosting” nodes were used for this, and an ensemble node was utilized to average the results.</p>
+                 <h2>Methodology</h2>
+                <p>• The target variable was highly imbalanced due to which advanced machine learning algorithms - Neural Network and Extreme Gradient Boosting were used. </br>• Selected important variables using Logistic Regression with the regression node set to backward variable selection and selection criterion as misclassification</br>
+                </br>• Used an ensemble to increase the validation ROC.Ensemble methods are techniques that create multiple models and then combine them to produce improved results. </br>
+                </br>• In this project, ensembling is done using average method
+                <img src="img/bankruptcy/1.png"></p>
+                <h2>Conclusion</h2>
+                <p>• Using different data partition nodes with unique random seeds helped in building more robust models in the end. From our experience, that prevented big differences in public and private scores. It also diminished the effects of overfitting models when they were ensembled.
+                </br>• Particularly, for this dataset, Random Forest models did not perform well, even after experimenting with different parameters and settings. 
+            </br>• Overall, the final model was the best performer and had the least FNR amongst models that were considered.</p>
+
+               
+            </div>
+        </div>
+    </section>
+    <!--================End Portfolio Details Area =================-->
+    
+  
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
