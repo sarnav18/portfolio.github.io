@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Portfolio Details</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+    <header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							
+							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+							
+							<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/sarnav-chauhan/"><i class="fa fa-linkedin"></i></a></li>
+							<li class="nav-item"><a class="nav-link" href="https://github.com/sarnav18"><i class="fa fa-github"></i></a></li>
+
+
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+
+
+	<!--================Start Portfolio Details Area =================-->
+	<section class="portfolio_details_area section_gap">
+        <div class="container">
+            <div class="portfolio_details_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left_img">
+                            <img class="img-fluid" src="img/scam-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="portfolio_right_text mt-30">
+                            <h4 class="text-uppercase">Craigslist Automobile ad scam Classification</h4><a href="https://github.com/sarnav18/CraigslistScamClassification">GitHub Link</a>
+                            <p>
+                                Due to the high commercial potential, Craigslist is a target for scammers. This project is to build a scam classification model in Python which automatically detects if a particular ad listing is a scam or not based on predefined business rules
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <p>Previous methods for Web scam detection mainly used
+                    link-based features and content-based features like n-grams to distinguish between scam and
+                    non-scam pages. However, link-based capabilities are useless in this particular sector because
+                    online marketing posts rarely link to one another. The fact that scam posts frequently contain
+                    misleading information sets them apart from non-scam advertisement posts in terms of
+                    substance. For instance, a scam advertisement post can draw customers by setting an inflated
+                    asking price. The content-based features are unable to capture this trait. Consequently, typical
+                    methods for detecting Web scam are ineffective in this field.</p>
+                <h2>Web Scraping</h2>
+                <p>To effectively harvest that data, we used Python libraries requests and BeautifulSoup. Here are
+                    the steps used to scrape data:</p>
+                <h3>Part 1: URL Extraction of ad listings</h3>
+                <p>• Inspected the HTML structure of Craiglist/Cars+Trucks with Chrome’s browser’s developer tools</br>
+                    • Deciphered data encoded in URLs</br>
+                    • Used requests and BeautifulSoup for scraping and parsing URL information of each ad listing from the Web</br>
+                    • Stepped through a web scraping pipeline from start to finish</br>
+                    • Built a script that fetches URLs from the website and saved the URLs in Excel</br>
+                    • Saved the URLs scraped from anchor tags of each listing</p>
+               <p>To create our target URL, we split it into two parts:</p>
+               <p>• The base URL represents the path to the search functionality of the website. The base
+                URL is https://chicago.craigslist.org/search/chicago-il/cta? This URL directly goes to our
+                desired category of cars and automobiles.</br>
+                • The specific site location that limits our results for only 60 mile radius of Chicago:
+                “lat=41.7434&lon=-87.7104&search_distance=60”</br>• As one page had only 120 records, we noticed that when we clicked “Next” at the bottom of
+                    the page, our URL changed which further appended “s=240&” in the URL. We then tweaked
+                    our code to include s=240 then 360 and so on.</br>• Libraries used - Pandas, BeautifulSoup, Requests</p>
+                <h2>Text Pre-processing</h2>
+                <p>• Before feeding the textual columns into the models we had to perform the following preprocessing
+                    steps on the “Clean Description” columns:</br>
+                    • Removal of HTML Tags such as ‘<</a>a>’,</br>
+                    • Removal of Punctuations</br>
+                    • Removal of most common words occurring across all the documents</br>
+                    • Tokenization of sentences</br>
+                    • Lemmatization of tokens </br>
+                    • Stopwords removal</br>
+                    • TF-IDF vectorization to finally convert the textual data into numerical vectors</br>
+                    •  For preparing the data for advanced modelling techniques such as Recurrent LSTM NN, further pre-processing had to be performed on the textual data such as - Converting text to sequence and pre-padding the sequences</p>
+                    <h2>Classification Models</h2>
+                    <p>• Since our data was highly imbalanced (4% Probable Scam labelled as True), we had to stratify the data set and split it into training and testing. We split the vectorized data in a ratio of 80-20 of training and validation.</br>
+                        •  We implemented seven machine learning algorithms out of which 6 are classical ones such as
+                        tree-based/kernel based or an ensemble of these. We implemented a state of the art technique
+                        as well - Recurrent LSTM Neural Network, which generally works well on textual data.</p>
+                        <img src="img/scam/1.png" width="700">
+                    <h2>Results</h2>
+                    <p>•  The evaluation metric we chose for selection of best model out of all the models we implemented was AUC ROC score or “The Area Under ROC Curve”.</br>
+                        • We wanted to maintain a balance between both False Positive Rate and True Positive Rate, as the genuine ad listings being predicted as scam (False Positive) would prove to be an impairment to the craigslist’s business.</br> 
+                        • Based on all the models we trained, LSTM gives us the best validation ROC AUC Score of <b>0.7398</b> on test data set.</p>
+                        <h2>Future Scope</h2>
+                        <p>• For future work, we plan to extend the experimental dataset.Since this is a highly imbalanced classification
+                            problem, if we randomly pick a sample of instances for judgement, there are very few scam
+                            instances in the sample. To overcome this, we plan to use other advanced models to pick
+                            instances that are likely to be scam for judgment.</br>
+                            •  We can also include image classification as a
+                            potential method to identify scams. Like for instance, do the images contain any text, if they
+                            do is it legitimate or not, are the pictures available on Google like stock images or not (if yes,
+                            they are likely scams). There is definitely a lot of scope, and this area is a vast area of research
+                            and our project was an initial step towards this.</p>
+                <!-- <p>Built on the foundation of healthcare and senior living, the organization has a staple product line across the United States and beyond. The is an organization on the rise and since they’ve scaled their operations up in the recent past, the number of entities and the complexity of their relationships have increased. Whenever an organization decides to scale up, they should be more observant in the way they manage their databases. Data management helps minimize potential errors by establishing processes and policies for usage and building trust in the data being used to make decisions across your organization. With reliable, up-to-date data, companies can respond more efficiently to market changes and customer needs. Currently the organization manages data using excel sheets, but wants to migrate to databases as they have the advantage to handle large volumes of data. Data management allows organizations to effectively scale data and usage occasions with repeatable processes to keep data and metadata up to date. When processes are easy to repeat, your organization can avoid the unnecessary costs of duplication, such as employees conducting the same research repeatedly or re-running costly queries unnecessarily.</p> -->
+            </div>
+        </div>
+    </section>
+    <!--================End Portfolio Details Area =================-->
+    
+  
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
